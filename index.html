@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>+ Amigos</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+  <aside class="sidebar">
+    <header>
+      <h1>+ Amigos</h1>
+      <button id="inviteBtn">Adicionar amigos</button>
+      <button id="editProfileBtn">Editar perfil</button>
+    </header>
+
+    <section id="friendsList"></section>
+  </aside>
+
+  <main class="chat">
+    <header class="chat-header">
+      <span id="backBtn">←</span>
+      <img id="chatAvatar">
+      <div>
+        <div id="chatName"></div>
+        <div id="chatStreak"></div>
+      </div>
+    </header>
+
+    <section id="messages"></section>
+
+    <footer class="input-bar">
+      <button id="attachBtn">+</button>
+      <input id="messageInput" placeholder="Escreva sua mensagem...">
+      <button id="sendBtn">→</button>
+    </footer>
+  </main>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/notify.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
